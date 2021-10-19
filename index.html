@@ -1,0 +1,534 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarian</title>
+    <link rel="shortcut icon" href="img/tarian.ico" >
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+        <div class="container">  
+            <a class="navbar-brand" href="#home"><i class="bi bi-house mx-1" style="font-size: 30px;"></i> Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#about">
+                            <i class="bi bi-credit-card-2-front mx-1" style="font-size: 20px;"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#skills">
+                            <i class="bi bi-hammer mx-1" style="font-size: 20px;"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#projects">
+                            <i class="bi bi-box mx-1" style="font-size: 20px;"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact_me">
+                            <i class="bi bi-telephone mx-1" style="font-size: 20px;"></i> Contact me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section -->
+    <section class="bg-dark text-white pb-sm-4" id="home">
+        <div class="container">
+            <div class="d-flex"  style="padding-top: 80px;">
+                <div>
+                    <h1 class="display-1 text-center" >Hi, I'm Tarian.</h1>
+                    <p class="lead mx-3">
+                        Currently a graduate student in Northeastern University. Master program: Information Systems.
+                        Graduated from ZJU Information Engineering.
+                    </p>
+                </div>
+                <img id="homeimg1" src="img/tarian_square.jpg" class="w-25 d-none d-md-block img-fluid rounded-circle" alt="wow" onclick="imageSwitch(2)">
+                <img id="homeimg2" src="img/hy.jpg" class="w-25 d-none d-md-none img-fluid rounded-circle" alt="wow" onclick="imageSwitch(1)">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="gallary">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <div id="carouselone" class="carousel slide px-3 py-sm-3" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/gallary/001/01.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/001/08.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/001/02.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/001/07.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/001/03.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/001/06.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/001/04.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/001/05.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselone" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselone" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div id="carouseltwo" class="carousel slide px-3 py-sm-3" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                          <button type="button" data-bs-target="#carouseltwo" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/gallary/002/01.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/002/09.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/002/02.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/002/08.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/002/03.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/002/07.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/002/04.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/002/06.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/gallary/002/05.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouseltwo" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouseltwo" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- a table for education -->
+    <section class="bg-dark"  id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-none d-md-block" style="padding-top: 80px;">
+                    <img src="img/about.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-9 px-sm-5 pt-sm-5">
+                    <table class="table table-hover table-dark">
+                        <caption><h3>Education <i class="bi bi-arrow-up-square-fill"></i> </h3></caption>
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">College</th>
+                            <th scope="col">Major</th>
+                            <th scope="col">Degree</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>2017</td>
+                            <td><a href="https://www.zju.edu.cn/"> ZJU</a></td>
+                            <td>Information Engineering</td>
+                            <td>Bachelor</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>2021</td>
+                            <td><a href="https://www.northeastern.edu/"> NEU</a></td>
+                            <td>Information Systems</td>
+                            <td>Master</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <table class="table table-hover table-dark">
+                        <caption><h3>Experience <i class="bi bi-arrow-up-square-fill"></i> </h3></caption>
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Program</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>08/19</td>
+                            <td>Tokyo tech</a></td>
+                            <td>Ex3 FPGA</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>10/20</td>
+                            <td>Online</a></td>
+                            <td>Computer Image Processing</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section id="skills" class="p-sm-5">
+        <div class="container">
+            <!-- cards with Accordion in each card -->
+            <p class="h1">SKILLS</p>
+            <div class="row g-sm-5">
+              <div class="col-md-6 col-lg-3">
+                  <div class="card h-100" >
+                      <img src="img/skill/01.jpg" class="card-img-top" alt="..." style="height: 40%;" >
+                      <div class="card-body">
+                          <h4>ELECTRICAL</h4>
+                          <ul class="card-text">
+                            <li>PCB design.</li>
+                            <li>Embedded systems design.</li>
+                            <li>FPGA design.</li>
+                          </ul>
+                          <a href="#gallary" class="btn btn-dark">SEE MORE</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="card h-100" >
+                      <img src="img/skill/02.jpg" class="card-img-top" alt="..." style="height: 40%;">
+                      <div class="card-body">
+                          <h4>PROGRAMMING</h4>
+                          <ul class="card-text">
+                            <li>C & Java & Python</li>
+                            <li>Matlab</li>
+                            <li>Verilog</li>
+                            <li>Assembly language</li>
+                          </ul>
+                          <a href="#gallary" class="btn btn-dark">SEE MORE</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="card h-100" >
+                      <img src="img/skill/03.jpg" class="card-img-top" alt="..." style="height: 40%;">
+                      <div class="card-body">
+                          <h4>ORGANIZATION</h4>
+                          <ul class="card-text">
+                            <li>College Student Union(events)</li>
+                            <li>Flute Association(concerts)</li>
+                          </ul>
+                          <a href="#gallary" class="btn btn-dark">SEE MORE</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="card h-100" >
+                      <img src="img/skill/04.jpg" class="card-img-top" alt="..." style="height: 40%;">
+                      <div class="card-body">
+                          <h4>FUN</h4>
+                          <ul class="card-text">
+                            <li>Flute</li>
+                            <li>Electrical Bass Guitar</li>
+                            <li>Gundam assembly</li>
+                          </ul>
+                          <a href="#gallary" class="btn btn-dark">SEE MORE</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section>
+      
+    <!-- projects section -->
+    <section class="bg-dark p-sm-5" id="projects">
+        <div class="container">
+          <P class="h1 text-white">PROJECTS</P>
+            <!-- Carousel with captions and Offcanvas link (left show detail: images of projects and link to github) -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <!-- CAROUSEL ITEM 1 -->
+                <div class="carousel-item active">
+                  <img src="img/project/p1/pt01.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p class="text-white bg-dark ">An embedded systems project using Raspberry Pi 4B</p>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasStart1" > Know more</a>
+                  </div>
+                  <div class="carousel-caption d-block d-md-none">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasStart1" > Know more</a>
+                  </div>
+                </div>
+                <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasStart1">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Raspberry Pi Mp3 design</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                  </div>
+                  <div class="offcanvas-body small">
+                    <p>
+                      It is an embedded system project based on Raspberry Pi 4B. <br>
+                      Through button control and Infrared remote control, making the Raspberry Pi an powerful MP3 player.
+                    </p>
+                    <div class="col">
+                      <div class="row pb-2">
+                        <img src="img/project/p1/connection.jpg" alt="">
+                        <p>RaspberryPi connection</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p1/GPIO.jpg" alt="">
+                        <p>GPIO</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p1/01.jpg.png" alt="">
+                        <p>Circuit on breadboard</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p1/02.jpg.png" alt="">
+                        <p>Infrared module</p>
+                      </div>
+                      <div class="row">
+                        <a class="text-dark" href="p1video.html"> <i class="bi bi-camera-video-fill h1"></i> See Videos </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CAROUSEL ITEM 2 -->
+                <div class="carousel-item">
+                  <img src="img/project/p2/pt02.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p class="text-white bg-dark ">A simple webpages design for Liella! Lovelive superstar! using html and css.</p>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasStart2" > Know more</a>
+                  </div>
+                  <div class="carousel-caption d-block d-md-none">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasStart2" > Know more</a>
+                  </div>
+                </div>
+                <!-- offcanvas for carousel item 2 -->
+                <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasStart2">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Web design</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                  </div>
+                  <div class="offcanvas-body small">
+                    <p>It is a simple webpage design project. Using html and css to design a web for Liella! <br>
+                      The web has five sections: home, introduction, members, activity and about us. <br>
+                      In the members page, it has 5 subpages to introduce the members separately. 
+                    </p>
+                    <div class="col">
+                      <div class="row pb-2">
+                        <img src="img/project/p2/home.jpg" alt="">
+                        <p>home page</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p2/introduction.jpg" alt="">
+                        <p>introduction page</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p2/m1.jpg" alt="">
+                        <p>member page 1</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p2/m2.jpg" alt="">
+                        <p>member page 2</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p2/m3.jpg" alt="">
+                        <p>member page 3</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p2/m4.jpg" alt="">
+                        <p>member page 4</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p2/m5.jpg" alt="">
+                        <p>member page 5</p>
+                      </div>
+                      <div class="row pb-2">
+                        <img src="img/project/p2/about us.jpg" alt="">
+                        <p>about us page</p>
+                      </div>
+                      <div class="row">
+                        <a class="text-dark" href="https://github.com/ttisntme/Liella-_webpage-html-css-exercise.git"> <i class="bi bi-github h1"></i> Go to Github </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CAROUSEL ITEM 3 -->
+                <div class="carousel-item">
+                  <img src="img/project/p3/pt1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p class="text-white bg-dark ">A signal processing project using Matlab.</p>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasStart3" > Know more</a>
+                  </div>
+                  <div class="carousel-caption d-block d-md-none">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasStart3" > Know more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasStart3">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Optimal Microphone Array Design Based on Optimization Algorithm </h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body small">
+                  <p>
+                    It is a project based on Matlab. Through signal processing method and optimization algorithm, design an Optimal Microphone Array.
+                  </p>
+                  <div class="col">
+                    <div class="row pb-2">
+                      <img src="img/project/p3/01.jpg" alt="">
+                      <p>Collect sound model</p>
+                    </div>
+                    <div class="row pb-2">
+                      <img src="img/project/p3/02.jpg" alt="">
+                      <img src="img/project/p3/04.jpg" alt="">
+                      <p>Collect equipment</p>
+                    </div>
+                    <div class="row pb-2">
+                      <img src="img/project/p3/05.jpg" alt="">
+                      <p>Collected sound wave</p>
+                    </div>
+                    <div class="row pb-2">
+                      <img src="img/project/p3/06.jpg" alt="">
+                      <p>Optimal Array design</p>
+                    </div>
+                    <div class="row pb-2">
+                      <img src="img/project/p3/07.jpg" alt="">
+                      <p>Beamforming</p>
+                    </div>
+                    <div class="row">
+                      <a class="text-dark" href="mailto:ttisntme@gmail.com"> <i class="bi bi-envelope-fill h1"></i> Know more </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact me section -->
+    <section id="contact_me">
+        <div class="container">
+            <div class="row py-sm-3">
+                <h2 class="fw-bold">Contact me</h2>
+                <div class="col-md">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Address: Boston MA 02115</li>
+                        <li class="list-group-item">Phone: (857) 763-8731</li>
+                        <li class="list-group-item">E-mail: ttisntme@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div class="lead">Social Media</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> 
+                            <a href="https://github.com/ttisntme"><i class="bi bi-github h3" style="color: black;"></i> </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.linkedin.com/in/yuan-huang-tarian"><i class="bi bi-linkedin h3" style="color: black;"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white text-center py-1">
+        <div class="container">
+            <p class="lead">
+                Copyright &copy; 2021 Tarian Huang <br>
+                <a href="mailto:ttisntme@gmail.com">ttisntme@gmail.com</a>
+                <a href="#home" style="float: right;" title="Back to top">
+                   <i class="bi bi-arrow-up-square h2 " style="color: white;" ></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
